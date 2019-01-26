@@ -34,15 +34,20 @@
  '(alert-default-style (quote fringe))
  '(coffee-tab-width 2)
  '(column-number-mode t)
+ '(css-indent-offset 2)
  '(global-linum-mode nil)
  '(org-export-backends (quote (ascii html icalendar latex md)))
  '(osx-clipboard-mode t)
  '(package-selected-packages
    (quote
-    (web-mode avy skewer-mode erc-terminal-notifier slack projectile go-guru ivy go-direx paradox json-mode js2-mode ace-jump-buffer ace-jump-mode go-errcheck markdown-mode dockerfile-mode undo-tree forecast go-mode use-package poporg protobuf-mode nix-mode go-tag go-rename yaml-mode terraform-mode request browse-kill-ring company-emacs-eclim company eclim gnuplot-mode chess org-jira github-modern-theme ag go-complete osx-clipboard ob-restclient ob-go org-bullets swiper hackernews magit-gh-pulls helm-google go-snippets go-playground-cli go-stacktracer go-add-tags sqlup-mode popup-kill-ring multiple-cursors magit go-projectile go-dlv go-autocomplete flymake-cursor flycheck)))
+    (thrift web-mode avy skewer-mode erc-terminal-notifier slack projectile go-guru ivy go-direx paradox json-mode js2-mode ace-jump-buffer ace-jump-mode go-errcheck markdown-mode dockerfile-mode undo-tree forecast go-mode use-package poporg protobuf-mode nix-mode go-tag go-rename yaml-mode terraform-mode request browse-kill-ring company-emacs-eclim company eclim gnuplot-mode chess org-jira github-modern-theme ag go-complete osx-clipboard ob-restclient ob-go org-bullets swiper hackernews magit-gh-pulls helm-google go-snippets go-playground-cli go-stacktracer go-add-tags sqlup-mode popup-kill-ring multiple-cursors magit go-projectile go-dlv go-autocomplete flymake-cursor flycheck)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(web-mode-enable-auto-indentation t)
+ '(web-mode-enable-auto-pairing t)
+ '(web-mode-enable-auto-quoting t)
+ '(web-mode-markup-indent-offset 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
