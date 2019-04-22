@@ -34,6 +34,7 @@
  '(alert-default-style (quote fringe))
  '(coffee-tab-width 2)
  '(column-number-mode t)
+ '(css-indent-offset 2)
  '(global-linum-mode nil)
  '(go-add-tags-style (quote snake-case))
  '(max-specpdl-size 10460)
@@ -47,7 +48,11 @@
     (".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" ".terraform")))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(web-mode-enable-auto-indentation t)
+ '(web-mode-enable-auto-pairing t)
+ '(web-mode-enable-auto-quoting t)
+ '(web-mode-markup-indent-offset 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

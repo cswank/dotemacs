@@ -81,6 +81,19 @@ SELECT * from stuff where thing = 'a';
     |                        |
     +------------------------+
 #+END_SRC
+*** remove duplicates from packages
+    #+BEGIN_SRC emacs-lisp :results code
+    (delete-dups (append 
+   (quote (thrift web-mode))
+    (quote (thrift scala-mode))
+    ))
+    #+END_SRC
+
+    #+RESULTS:
+    #+BEGIN_SRC emacs-lisp
+    (thrift web-mode scala-mode)
+    #+END_SRC
+
 ** ditaa
 *** install
   Note: to install ditaa:
