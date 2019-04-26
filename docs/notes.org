@@ -16,6 +16,7 @@
    C-c C-e export
    Meta Enter create a new item at current indent level
 ** code block
+*** examples
    src block:     <s TAB
    native editor: C-c '
 #+BEGIN_SRC emacs-lisp -n -r
