@@ -482,7 +482,7 @@ To accept all replacements in each file, hit !.
 
 Another way to do the same thing is to use the “tags” feature of Emacs: it includes the command tags-query-replace which performs a query-replace across all the files mentioned in the TAGS file. See Identifier Search.
 * Elisp
-
+** Get input from minibuffer
 #+BEGIN_SRC  emacs-lisp
 (defun greeting ()
     (let ((your-name (read-from-minibuffer "Enter your name: ")))
@@ -490,6 +490,11 @@ Another way to do the same thing is to use the “tags” feature of Emacs: it i
                       your-name ; the let-bound var, entered at prompt
                       ))))
 #+END_SRC  
+
+#+RESULTS:
+: greeting
+
+** 
 * Mu4e
 ** Attach image to email
    C-c C-a
