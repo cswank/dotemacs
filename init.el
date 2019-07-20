@@ -69,6 +69,7 @@
 ;;Load Libraries
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (load-library "my-color-theme")
+(load-file "~/.emacs.d/my-plugins/my-beer.el")
 (load-file "~/.emacs.d/my-plugins/my-c.el")
 (load-file "~/.emacs.d/my-plugins/my-go.el")
 (load-file "~/.emacs.d/my-plugins/my-javascript.el")
