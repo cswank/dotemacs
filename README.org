@@ -22,11 +22,11 @@ of the init files can be loaded.
 Install these go tools:
 
 #+BEGIN_SRC shell
-  go get -u -v github.com/nsf/gocode
-  go get -u github.com/rogpeppe/godef
-  go get -u golang.org/x/tools/cmd/goimports
-  go get -u github.com/dougm/goflymake
-  go get -u github.com/fatih/gomodifytags
+  go get -u -v github.com/mdempsky/gocode
+  go get -u -v github.com/rogpeppe/godef
+  go get -u -v golang.org/x/tools/cmd/goimports
+  go get -u -v github.com/dougm/goflymake
+  go get -u -v github.com/fatih/gomodifytags
   go get -u -v golang.org/x/tools/cmd/gorename
 #+END_SRC
 
