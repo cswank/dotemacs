@@ -9,7 +9,7 @@
 (package-initialize)
 (add-to-list 'load-path "~/.emacs.d/elpa")
 (add-to-list 'load-path "~/.emacs.d/color")
-;;(add-to-list 'load-path "~/.emacs.d/my-plugins")
+(add-to-list 'load-path "~/.emacs.d/plugins/mmm-mode")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;MELPA packages
@@ -18,7 +18,7 @@
   (require 'package)
   (add-to-list
    'package-archives
-   '("melpa" . "http://melpa.org/packages/")
+   '("melpa" . "https://melpa.org/packages/")
    t)
     (package-initialize))
 
@@ -37,12 +37,14 @@
  '(css-indent-offset 2)
  '(global-linum-mode nil)
  '(go-add-tags-style (quote snake-case))
+ '(js-indent-level 2)
  '(max-specpdl-size 10460)
  '(org-export-backends (quote (ascii html icalendar latex md)))
+ '(org-jira-done-states (quote ("Closed" "Deployed")))
  '(osx-clipboard-mode t)
  '(package-selected-packages
    (quote
-    (vue-mode restclient go-imports edit-indirect ein gnuplot thrift scala-mode chronos avy skewer-mode erc-terminal-notifier slack projectile go-guru ivy go-direx paradox json-mode js2-mode ace-jump-buffer ace-jump-mode go-errcheck markdown-mode dockerfile-mode undo-tree forecast go-mode use-package poporg protobuf-mode nix-mode go-tag go-rename yaml-mode terraform-mode request browse-kill-ring company-emacs-eclim company eclim gnuplot-mode chess org-jira github-modern-theme ag go-complete osx-clipboard ob-restclient ob-go org-bullets swiper hackernews magit-gh-pulls helm-google go-snippets go-playground-cli go-stacktracer go-add-tags sqlup-mode popup-kill-ring multiple-cursors magit go-projectile go-dlv go-autocomplete flymake-cursor flycheck web-mode)))
+    (jupyter mmm-mode vue-mode go-imports flycheck-gometalinter flycheck-golangci-lint ein gnuplot thrift scala-mode chronos avy skewer-mode erc-terminal-notifier slack projectile go-guru ivy go-direx paradox json-mode js2-mode ace-jump-buffer ace-jump-mode go-errcheck markdown-mode dockerfile-mode undo-tree forecast go-mode use-package poporg protobuf-mode nix-mode go-tag go-rename yaml-mode terraform-mode request browse-kill-ring company-emacs-eclim company eclim gnuplot-mode chess org-jira github-modern-theme ag go-complete osx-clipboard ob-restclient ob-go org-bullets swiper hackernews magit-gh-pulls helm-google go-snippets go-playground-cli go-stacktracer go-add-tags sqlup-mode popup-kill-ring multiple-cursors magit go-projectile go-dlv go-autocomplete flymake-cursor flycheck web-mode)))
  '(projectile-globally-ignored-directories
    (quote
     (".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" ".terraform")))
@@ -69,6 +71,8 @@
 ;;Load Libraries
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (load-library "my-color-theme")
+(load-file "~/.emacs.d/plugins/mmm-mode/mmm-mode.el")
+(load-file "~/.emacs.d/plugins/vue-mode/vue-mode.el")
 (load-file "~/.emacs.d/my-plugins/my-beer.el")
 (load-file "~/.emacs.d/my-plugins/my-c.el")
 (load-file "~/.emacs.d/my-plugins/my-go.el")

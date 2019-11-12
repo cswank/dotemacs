@@ -494,7 +494,10 @@ Another way to do the same thing is to use the “tags” feature of Emacs: it i
 #+RESULTS:
 : greeting
 
-** 
+** Set union
+   #+BEGIN_SRC elisp
+   (-union (quote (a b c d)) (quote (b c d e)))
+   #+END_SRC
 * Mu4e
 ** Attach image to email
    C-c C-a
