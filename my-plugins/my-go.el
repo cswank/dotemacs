@@ -8,16 +8,24 @@
 (add-hook 'go-mode-hook #'lsp)
 (require 'company-lsp)
 (push 'company-lsp company-backends)
+(require 'lsp-ui)
 
-(defun my-go-mode-hook ()
-  "Come on, I don't want to document this."
-  (setq gofmt-command "goimports")
-  (add-hook 'before-save-hook 'gofmt-before-save)
-  (if (not (string-match "go" compile-command))
-      (set (make-local-variable 'compile-command)
-           "go build -v && go test -v && go vet")))
+(defun lsp-go-install-save-hooks ()
+  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+  (add-hook 'before-save-hook #'lsp-organize-imports t t))
+(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
 
-(add-hook 'go-mode-hook 'my-go-mode-hook)
+(add-hook 'go-mode-hook 'flycheck-mode)
+(add-hook 'lsp-mode-hook 'lsp-ui-mode)
+
+(setq lsp-gopls-staticcheck t
+      lsp-eldoc-render-all t
+      lsp-ui-doc-enable nil
+      lsp-ui-peek-enable t
+      lsp-ui-sideline-enable t
+      lsp-ui-imenu-enable t
+      lsp-ui-flycheck-enable t)
+
 ;; ;;(yas-reload-all)
 ;; (add-hook 'go-mode-hook 'yas-minor-mode)
 
