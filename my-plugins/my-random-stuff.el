@@ -105,4 +105,12 @@
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Parsyl stuff
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun auth ()
+  "Get a parsyl auth token"
+  (interactive)
+  (setenv "AUTH" (format "Authorization: Bearer %s" (shell-command-to-string "token"))))
+  
 ;;; my-random-stuff.el ends here

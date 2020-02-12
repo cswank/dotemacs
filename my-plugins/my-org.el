@@ -11,6 +11,7 @@
 	(restclient . t)
     (go . t)
     (gnuplot . t)
+    (http . t)
     ))
 
 (setq org-src-fontify-natively t)
