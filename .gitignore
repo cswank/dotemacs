@@ -10,6 +10,7 @@
 custom.el
 transient
 .lsp-session*
+.cache
 
 # Can also ignore all directories and files in a directory.
 tramp
