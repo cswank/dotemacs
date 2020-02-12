@@ -22,7 +22,7 @@
    t)
     (package-initialize))
 
-(setq custom-file "$HOME/.emacs.d/custom.el")
+(setq custom-file "~/.emacs.d/custom.el")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -40,8 +40,6 @@
 ;;Load Libraries
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (load-library "my-color-theme")
-(load-file "~/.emacs.d/plugins/mmm-mode/mmm-mode.el")
-(load-file "~/.emacs.d/plugins/vue-mode/vue-mode.el")
 (load-file "~/.emacs.d/my-plugins/my-beer.el")
 (load-file "~/.emacs.d/my-plugins/my-c.el")
 (load-file "~/.emacs.d/my-plugins/my-go.el")
