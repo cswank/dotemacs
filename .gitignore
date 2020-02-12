@@ -8,6 +8,8 @@
 *.pyc
 *.data
 custom.el
+transient
+.lsp-session*
 
 # Can also ignore all directories and files in a directory.
 tramp
