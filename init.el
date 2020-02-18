@@ -23,6 +23,7 @@
     (package-initialize))
 
 (setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
