@@ -28,7 +28,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;Other stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 ;; make *scratch* buffer org
 (setq initial-major-mode 'org-mode)
 
@@ -65,9 +64,7 @@
 ;;; turn on syntax highlighting
 (global-font-lock-mode 1)
 
-;;; turn on flycheck for all buffers
-;; (add-hook 'after-init-hook #'global-flycheck-mode)
-
+(show-paren-mode 1)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Terraform
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
