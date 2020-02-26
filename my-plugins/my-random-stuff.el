@@ -105,7 +105,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Parsyl stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defun auth ()
+(defun token ()
   "Get a parsyl auth token"
   (interactive)
   (setenv "AUTH" (format "Authorization: Bearer %s" (shell-command-to-string "token"))))
