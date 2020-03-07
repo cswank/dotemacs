@@ -54,15 +54,5 @@
 (global-set-key (kbd "C-c C-g p") 'go-switch-to-playground)
 (global-set-key (kbd "C-c C-g n") 'go-create-playground)
 
-;; (add-hook 'go-mode-hook
-;;           (lambda ()
-;;             (add-hook 'before-save-hook 'gofmt-before-save)
-;;             (add-hook 'completion-at-point-functions 'go-complete-at-point)
-;;             (setq tab-width 4)
-;;             (setq indent-tabs-mode 1)))
-
-;; (add-hook 'go-mode-hook 'flycheck-mode)
-
-;;(add-hook 'go-mode-hook 'auto-complete-for-go)
 (provide 'my-go)
 ;;; my-go.el ends here
