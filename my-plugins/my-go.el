@@ -15,6 +15,7 @@
   (add-hook 'before-save-hook #'lsp-organize-imports t t))
 (add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
 
+(setq lsp-prefer-flymake nil)
 (add-hook 'go-mode-hook 'flycheck-mode)
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)
 
