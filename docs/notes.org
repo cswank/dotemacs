@@ -1,4 +1,3 @@
-#+STARTUP: hidestars
 * Org mode
 ** adding color
    #+BEGIN_SRC elisp
@@ -207,18 +206,19 @@ cp /usr/local/Cellar/ditaa/0.10/libexec/ditaa0_10.jar /usr/local/Cellar/emacs/HE
     $  means column
     @  means row
     @> means last row
-|  x |  y | z      |
-|----+----+--------|
-|  1 |  1 | hi     |
-|  2 |  4 | there! |
-|  3 |  9 |        |
-|  4 | 16 |        |
-|  5 | 25 |        |
-|  6 | 36 |        |
-|  7 | 49 |        |
-|----+----+--------|
-| 28 | 20 |        |
+|  x |  y | z      |    |
+|----+----+--------+----|
+|  1 |  1 | hi     |  2 |
+|  2 |  4 | there! |  6 |
+|  3 |  9 |        | 12 |
+|  4 | 16 |        | 20 |
+|  5 | 25 |        | 30 |
+|  6 | 36 |        | 42 |
+|  7 | 49 |        | 56 |
+|----+----+--------+----|
+| 28 | 20 |        |    |
 #+TBLFM: @>$1=vsum(@2..@-1)::@>$2=vmean(@2..@-1)::$2=$1^2::@3$3=there!
+#+TBLFM: @2$4..@-1$4=$1+$2
 (hit C-c C-c to calculate)
 
 *** lisp
