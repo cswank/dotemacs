@@ -28,6 +28,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;Other stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ido
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+(put 'narrow-to-region 'disabled nil)
+
 ;; make *scratch* buffer org
 (setq initial-major-mode 'org-mode)
 
