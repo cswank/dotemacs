@@ -41,7 +41,8 @@
     (previous-line)
     (end-of-line)
     (insert "\n\t")
-    (go-mode)))
+    (go-mode)
+    (shell-command "go mod init go-playground")))
 
 (defun go-switch-to-playground ()
   "Switch to Go Playground buffer, creating if necessary."

@@ -31,6 +31,12 @@
 ;; make *scratch* buffer org
 (setq initial-major-mode 'org-mode)
 
+;; edit s3 files
+(require 's3ed)
+(s3ed-mode)
+(global-set-key (kbd "C-c s f") 's3ed-find-file)
+(global-set-key (kbd "C-c s s") 's3ed-save-file)
+
 (setq-default indent-tabs-mode nil)
 
 ;;swiper (replace isearch)
