@@ -9,6 +9,7 @@
 *.data
 custom.el
 transient
+eshell
 .lsp-session*
 .cache
 
