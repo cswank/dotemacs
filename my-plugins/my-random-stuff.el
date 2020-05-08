@@ -28,13 +28,16 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;Other stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; ido
+(defun abv (a b)
+  "alcohol by volume"
+  (* (- a b) 131.25))
+
+
+(ido-mode 1)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
 (put 'narrow-to-region 'disabled nil)
+(setq-default indent-tabs-mode nil)
 
 ;; make *scratch* buffer org
 (setq initial-major-mode 'org-mode)
@@ -44,8 +47,6 @@
 (s3ed-mode)
 (global-set-key (kbd "C-c s f") 's3ed-find-file)
 (global-set-key (kbd "C-c s s") 's3ed-save-file)
-
-(setq-default indent-tabs-mode nil)
 
 ;;swiper (replace isearch)
 (ivy-mode 1)
@@ -107,7 +108,6 @@
 ;; Kill ring menu
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key "\C-cy" 'browse-kill-ring)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Projectile mode (der)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

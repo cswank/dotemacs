@@ -23,14 +23,6 @@
 (global-set-key (kbd "C-c C-p") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-a") 'mc/mark-all-like-this)
 
-(defun abv (a b)
-    "alcohol by volume"
-    (* (- a b) 131.25)
-    )
-
-;;(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
-;;(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-
 (provide 'my-keybindings)
 ;;; my-keybindings.el ends here
 

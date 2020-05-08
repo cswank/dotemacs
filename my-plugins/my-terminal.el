@@ -13,7 +13,12 @@
     (ansi-term "/bin/zsh"))
   (get-buffer-process "*ansi-term*"))
 
-(global-set-key "\C-ct" '(lambda ()(interactive)(terminal)))
+(global-set-key "\C-ct" '(lambda ()
+                           (interactive)
+                           (let ((current-dir (expand-file-name default-directory)))
+                             (term-send-string
+                               (terminal)
+                               (format "cd '%s'\n" current-dir)))))
 
 (defadvice term-handle-exit
   (after term-kill-buffer-on-exit activate)
