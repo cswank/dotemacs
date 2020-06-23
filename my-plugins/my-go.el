@@ -56,5 +56,8 @@
 (global-set-key (kbd "C-c C-g p") 'go-switch-to-playground)
 (global-set-key (kbd "C-c C-g n") 'go-create-playground)
 
+(fset 'iferr
+   "if err != nil {\n	return err\n	}")
+
 (provide 'my-go)
 ;;; my-go.el ends here

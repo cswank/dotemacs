@@ -8,4 +8,4 @@
                        ("gotable" "#+NAME: $2\n#+BEGIN_SRC go :var x=0 :results output :imports '(\"fmt\") \n  fmt.Println(x*x)\n#+END_SRC\n\n#+NAME: $3\n| a |  b |\n|---+----|\n| $0 |    |\n|   |    |\n#+TBLFM: \\$2='(org-sbe $2 (x \\$1))\n" "gotable" nil nil nil "/Users/craig/.emacs.d/snippets/org-mode/gotable" nil nil)))
 
 
-;;; Do not edit! File generated at Thu Mar 19 06:42:42 2020
+;;; Do not edit! File generated at Tue Jun 16 08:18:45 2020

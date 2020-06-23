@@ -2,7 +2,8 @@
 ;;; Snippet definitions:
 ;;;
 (yas-define-snippets 'go-mode
-                     '(("struct" "type $1 struct {\n     $0\n}\n\nfunc New(opts ...func(*$1)) *$1 {\n     x :=&$1{}\n\n     for _, opt := range opts {\n         opt(x)\n     }\n\n     return x\n}" "struct" nil nil nil "/Users/craig/.emacs.d/snippets/go-mode/struct" nil nil)))
+                     '(("struct" "type $1 struct {\n     $0\n}\n\nfunc New(opts ...func(*$1)) *$1 {\n     x :=&$1{}\n\n     for _, opt := range opts {\n         opt(x)\n     }\n\n     return x\n}" "struct" nil nil nil "/Users/craig/.emacs.d/snippets/go-mode/struct" nil nil)
+                       ("if err" "if err != nil {\n	return err\n}  \n" "err" nil nil nil "/Users/craig/.emacs.d/snippets/go-mode/err" nil nil)))
 
 
-;;; Do not edit! File generated at Thu Mar 19 06:42:42 2020
+;;; Do not edit! File generated at Tue Jun 16 08:18:45 2020
