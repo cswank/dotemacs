@@ -32,6 +32,7 @@
   "alcohol by volume"
   (* (- a b) 131.25))
 
+(electric-indent-mode -1)
 
 (ido-mode 1)
 (put 'downcase-region 'disabled nil)
@@ -47,6 +48,13 @@
 (s3ed-mode)
 (global-set-key (kbd "C-c s f") 's3ed-find-file)
 (global-set-key (kbd "C-c s s") 's3ed-save-file)
+(global-set-key (kbd "C-c s p") 's3ed-set-profile)
+
+;; recentf
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(setq recentf-max-saved-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 ;;swiper (replace isearch)
 (ivy-mode 1)

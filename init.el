@@ -46,6 +46,5 @@
   (load-file "~/.emacs.d/my-plugins/my-email.el"))
 (when (not (string= (getenv "SLACK_CLIENT_ID") "nil"))
   (load-file "~/.emacs.d/my-plugins/my-slack.el"))
-(electric-indent-mode -1)
 (provide 'init)
 ;;; init.el ends here
