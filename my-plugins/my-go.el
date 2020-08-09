@@ -6,8 +6,6 @@
 ;; which one??
 (require 'lsp-mode)
 (add-hook 'go-mode-hook #'lsp)
-(require 'company-lsp)
-(push 'company-lsp company-backends)
 (require 'lsp-ui)
 
 (defun lsp-go-install-save-hooks ()

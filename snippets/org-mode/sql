@@ -1,0 +1,6 @@
+# -- mode: snippet; require-final-newline: nil --
+# name: sql
+# key: sql
+# --
+#+BEGIN_SRC sql :engine postgresql :exports results :cmdline -d `(symbol-value 'database-name)` -h '`(symbol-value 'database-host)`' -U `(symbol-value 'database-user)`
+#+END_SRC

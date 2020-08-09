@@ -6,4 +6,4 @@
                        ("if err" "if err != nil {\n	return err\n}  \n" "err" nil nil nil "/Users/craig/.emacs.d/snippets/go-mode/err" nil nil)))
 
 
-;;; Do not edit! File generated at Tue Jun 16 08:18:45 2020
+;;; Do not edit! File generated at Tue Jul 21 12:53:17 2020
