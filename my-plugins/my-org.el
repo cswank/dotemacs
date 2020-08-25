@@ -14,6 +14,7 @@
     (http . t)
     ))
 
+(require 'org-tempo)
 (setq org-src-fontify-natively t)
 (setq org-confirm-babel-evaluate nil)
 (provide 'my-org)

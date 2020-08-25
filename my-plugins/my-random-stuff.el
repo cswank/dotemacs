@@ -11,6 +11,7 @@
 (setq-default dired-omit-files-p t) ; this is buffer-local variable
 (setq dired-omit-files "^\.[a-z|A-Z]+\|^\.?#\|^\.$")
 (setq dired-omit-extensions '(".pyo" ".pyc" "~" ".bak" ".pt.cache" ".svn" ".egg-info" ".git" ".gitignore" ".coverprofile"))
+(add-hook 'dired-mode-hook 'dired-omit-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;define modes for file extensions
