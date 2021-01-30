@@ -3,4 +3,5 @@
 # key: sql
 # --
 #+BEGIN_SRC sql :engine postgresql :exports results :cmdline -d `(symbol-value 'database-name)` -h '`(symbol-value 'database-host)`' -U `(symbol-value 'database-user)`
+$0
 #+END_SRC

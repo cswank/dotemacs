@@ -1,8 +1,8 @@
 # -*- mode: snippet -*-
 # name: err
-# key: if err
+# key: iferr
 # --
 
 if err != nil {
-	return err
+	return $1err
 }  

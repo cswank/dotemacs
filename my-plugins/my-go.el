@@ -23,10 +23,8 @@
       lsp-ui-peek-enable t
       lsp-ui-sideline-enable t
       lsp-ui-imenu-enable t
-      lsp-ui-flycheck-enable t)
-
-;; ;;(yas-reload-all)
-;; (add-hook 'go-mode-hook 'yas-minor-mode)
+      lsp-ui-flycheck-enable nil
+      lsp-headerline-breadcrumb-mode nil)
 
 (defun go-create-playground ()
   "Create a new temporary file with a skeletal Go application."

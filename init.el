@@ -47,3 +47,4 @@
   (load-file "~/.emacs.d/my-plugins/my-slack.el"))
 (provide 'init)
 ;;; init.el ends here
+(put 'set-goal-column 'disabled nil)
