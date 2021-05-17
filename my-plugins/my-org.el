@@ -12,11 +12,22 @@
     (go . t)
     (gnuplot . t)
     (http . t)
+    (calc . t)
+    (plantuml . t)
     ))
 
 (require 'org-tempo)
 (setq org-src-fontify-natively t)
 (setq org-confirm-babel-evaluate nil)
+
+(setq org-mobile-directory "~/Library/Mobile Documents/iCloud~com~mobileorg~mobileorg/Documents")
+(setq org-directory "~/Documents/Org")
+(setq org-mobile-inbox-for-pull "~/Documents/Org/flagged.org")
+(setq org-mobile-files
+      '("recipies.org" "astronomy.org"))
+
+(setq org-plantuml-jar-path "~/.nix-profile/lib/plantuml.jar")
+
 (provide 'my-org)
 ;;; my-org.el ends here
 
