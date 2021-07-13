@@ -17,6 +17,7 @@
     ))
 
 (require 'org-tempo)
+(setq org-startup-folded t)
 (setq org-src-fontify-natively t)
 (setq org-confirm-babel-evaluate nil)
 
@@ -30,4 +31,3 @@
 
 (provide 'my-org)
 ;;; my-org.el ends here
-
